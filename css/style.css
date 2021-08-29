@@ -39,13 +39,14 @@ h2 {
 
 label {
   color:rgb(153, 155, 159);
-  font-size: 14px;
+  font-size: 10pt;
+  font-weight: 300;
 }
 
 p {
   color:rgb(153, 155, 159);
   font-weight: 300;
-  font-size: 12pt;
+  font-size: 10pt;
   margin-bottom: 1em;
 }
 
@@ -64,6 +65,17 @@ h3 {
   color:rgb(44, 54, 82);
   padding: .5em 0;
   font-size: 12pt;
+}
+
+.legend {
+  color: rgb(44, 54, 82);
+  padding: 1em 0;
+  font-size: 12pt;
+  font-weight: 700;
+}
+
+fieldset{
+  border: none;
 }
 
 
@@ -140,8 +152,6 @@ input:focus + span {
   transform: scale(1.05);
   transition-duration: .3s;
 }
-
-
 
 .field-7 {
   width: 50%;
@@ -252,21 +262,37 @@ option{
     align-items: center;
   }
 
-  .form-field label{
-    width: 35%;
-    margin-right: 3em;
+
+  .field-1 .input,
+  .field-2 .input,
+  .field-3 .input,
+  .field-4 .input,
+  .field-5 .input,
+  .field-6 .input{
+    flex-basis: 75%;
   }
 
+  .field-7 .input{
+    flex-basis: 25%;
+    margin-right: 50%;
+  }
+  
+  .form-field label{
+    flex-basis: 25%;
+  }
 
+  
 
   .newsletter-form .form-field {
     display: flex;
     align-items: center;
   }
+  
 
   .newsletter-form label {
     margin-left: .5em;
   }
+
 
   .field-13 {
     flex-direction: column;
