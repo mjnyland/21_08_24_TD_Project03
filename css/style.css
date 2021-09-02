@@ -167,6 +167,15 @@ input:focus + span {
   font-weight: 300;
 }
 
+textarea::placeholder{
+  position: absolute;
+  top: 15px;
+  left: 3%;
+  overflow: visible;
+  font-style: italic;
+  font-size: 10pt;
+  font-weight: 300;
+}
 
 
 
@@ -206,6 +215,17 @@ option{
   color: red;
 }
 
+.news-field .form-field{
+  display: flex;
+  align-items: center;
+}
+
+.field-13{
+  flex-direction: column;
+  justify-content: left;
+}
+
+
 .field-13 textarea{
     border: none;
     outline: none;
@@ -216,9 +236,8 @@ option{
     width:100%;
 }
 
-.news-field .form-field{
-  display: flex;
-  align-items: center;
+#topics{
+  margin-top: 1em;
 }
 
 .news-type {
@@ -260,6 +279,7 @@ option{
     display: flex;
     width: 100%;
     align-items: center;
+    justify-content: left;
   }
 
 
@@ -281,13 +301,6 @@ option{
     flex-basis: 25%;
   }
 
-  
-
-  .newsletter-form .form-field {
-    display: flex;
-    align-items: center;
-  }
-  
 
   .newsletter-form label {
     margin-left: .5em;
@@ -296,8 +309,18 @@ option{
 
   .field-13 {
     flex-direction: column;
-    align-items: flex-start;
   }
+
+  .field-13-label {
+    color:rgb(153, 155, 159);
+    font-weight: 300;
+    font-size: 10pt;
+  }
+
+  #topics{
+    margin-top: 1em;
+  }
+
 
   .news-field{
     margin-bottom: .5em;
